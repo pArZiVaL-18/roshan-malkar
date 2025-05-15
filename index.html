@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="style.css" />
+        <title>pArZiVaL-18 | Portfolio</title>
+    </head>
+    <body>
+        <!-- Header -->
+        <header>
+            <div class="logo">pArZiVaL-18</div>
+            <nav>
+                <ul>
+                    <li><a href="#home">#home</a></li>
+                    <li><a href="#projects">#projects</a></li>
+                    <li><a href="#skills">#skills</a></li>
+                    <li><a href="#about">#about-me</a></li>
+                    <li><a href="#contact">#contact-me</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- Social Icons -->
+        <div class="social-icons">
+            <div class="line"></div>
+            <img
+                class="icon"
+                src="public/linkedin1.png"
+                onclick="location.href=`https://www.linkedin.com/in/roshan-malkar-8670b4218/`"
+            />
+
+            <img
+                class="icon"
+                src="public/github.png"
+                onclick="location.href=`https://github.com/pArZiVaL-18`"
+            />
+            <img
+                class="icon"
+                src="public/leetcode1.png"
+                onclick="location.href=`https://leetcode.com/u/RoshanMalkar/`"
+            />
+        </div>
+
+        <!-- Hero Section -->
+        <section id="home" class="hero">
+            <div class="hero-text">
+                <h1>Hi, I'm <span>Roshan</span></h1>
+                <div class="typewriter-container">
+                    <span id="typewriter-text"></span>
+                    <span class="cursor">|</span>
+                </div>
+                <p>
+                    Right now, I’m all about cracking DSA problems, crafting
+                    smooth frontends, and wiring up powerful backends.
+                </p>
+                <a href="#projects" class="cta-btn">Scroll Down ↓</a>
+                <!-- <div class="currently-working">
+                    <span>●</span> Currently working on <span>Portfolio</span>
+                </div> -->
+            </div>
+            <div class="hero-image">
+                <div class="border-animation"></div>
+                <img src="public/profile.jpeg" alt="Your Profile Picture" />
+            </div>
+        </section>
+
+        <!-- Quote Section -->
+        <div class="quote-section">
+            <div class="quote">
+                <div class="quotes">
+                    Control can sometimes be an illusion. But sometimes you need
+                    illusion to gain control.
+                </div>
+                <div class="quote-author">- Mr. Who</div>
+            </div>
+        </div>
+
+        <!-- Projects Section -->
+        <section id="projects">
+            <div class="section-title">
+                <div>
+                    <h2><span>#</span>projects</h2>
+                    <div class="line"></div>
+                </div>
+            </div>
+            <div class="projects-grid">
+                <!-- Project 1 -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="/api/placeholder/400/300" alt="Project 1" />
+                    </div>
+                    <div class="project-info">
+                        <h3 class="project-title">Algo-Visualizer</h3>
+                        <div class="project-tags">HTML CSS JavaScript</div>
+                        <p class="project-description">
+                            An application that visually demonstrates how
+                            sorting algorithms works.
+                        </p>
+                        <button
+                            class="btn live-btn"
+                            onclick="location.href='https://github.com/pArZiVaL-18/Sorting-Algo-Visualizer'"
+                        >
+                            GitHub
+                        </button>
+                        <button
+                            class="btn live-btn"
+                            onclick="location.href='https://parzival-18.github.io/Sorting-Algo-Visualizer/'"
+                        >
+                            Live ↗
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="/api/placeholder/400/300" alt="Project 2" />
+                    </div>
+                    <div class="project-info">
+                        <h3 class="project-title">Zoom Clone</h3>
+                        <div class="project-tags">
+                            React NodeJs Express.js MongoDB WebRTC Socket.IO
+                        </div>
+                        <p class="project-description">
+                            A Web based version of zoom clone.
+                        </p>
+                        <button
+                            class="btn live-btn"
+                            onclick="location.href='https://github.com/pArZiVaL-18/ZoomClone'"
+                        >
+                            GitHub
+                        </button>
+                        <button
+                            class="btn live-btn"
+                            onclick="location.href='https://zoomclonefrontend2.onrender.com'"
+                        >
+                            Live ↗
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="/api/placeholder/400/300" alt="Project 3" />
+                    </div>
+                    <div class="project-info">
+                        <h3 class="project-title">React To-Do App</h3>
+                        <div class="project-tags">ReactJs Tailwind CSS</div>
+                        <p class="project-description">
+                            A simple and interactive Todo List application built
+                            with React.
+                        </p>
+                        <button
+                            class="btn live-btn"
+                            onclick="location.href='https://github.com/pArZiVaL-18/React-ToDo-App'"
+                        >
+                            GitHub
+                        </button>
+                        <button
+                            class="btn live-btn"
+                            onclick="location.href='https://github.com/pArZiVaL-18/React-ToDo-App'"
+                        >
+                            Live ↗
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills">
+            <div class="section-title">
+                <div>
+                    <h2><span>#</span>skills</h2>
+                    <div class="line"></div>
+                </div>
+            </div>
+            <div class="skills-grid">
+                <!-- Skill 1 -->
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <img
+                            src="./public/html1.png"
+                            alt="Checkmark"
+                            class="icon"
+                        />
+                    </div>
+                    <div class="skill-name">HTML</div>
+                </div>
+
+                <!-- Skill 2 -->
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <img
+                            src="./public/css1.png"
+                            alt="Checkmark"
+                            class="icon"
+                        />
+                    </div>
+                    <div class="skill-name">CSS</div>
+                </div>
+
+                <!-- Skill 3 -->
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <img
+                            src="./public/js1.png"
+                            alt="Checkmark"
+                            class="icon"
+                        />
+                    </div>
+                    <div class="skill-name">JavaScript</div>
+                </div>
+
+                <!-- Skill 4 -->
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <img
+                            src="./public/react1.png"
+                            alt="Checkmark"
+                            class="icon"
+                        />
+                    </div>
+                    <div class="skill-name">ReactJS</div>
+                </div>
+
+                <!-- Skill 5 -->
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <img
+                            src="./public/node1.png"
+                            alt="Checkmark"
+                            class="icon"
+                        />
+                    </div>
+                    <div class="skill-name">NodeJS</div>
+                </div>
+
+                <!-- Skill 6 -->
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <img
+                            src="./public/express.png"
+                            alt="Checkmark"
+                            class="icon"
+                        />
+                    </div>
+                    <div class="skill-name">Express</div>
+                </div>
+
+                <!-- Skill 7 -->
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <img
+                            src="./public/git1.png"
+                            alt="Checkmark"
+                            class="icon"
+                        />
+                    </div>
+                    <div class="skill-name">Git</div>
+                </div>
+
+                <!-- Skill 8 -->
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <img
+                            src="./public/mongo1.png"
+                            alt="Checkmark"
+                            class="icon"
+                        />
+                    </div>
+                    <div class="skill-name">MongoDB</div>
+                </div>
+
+                <!-- Skill 9 -->
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <span style="color: #007396">■</span>
+                    </div>
+                    <div class="skill-name">Java</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about">
+            <div class="section-title">
+                <div>
+                    <h2><span>#</span>about-me</h2>
+                    <div class="line"></div>
+                </div>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>Hello, I'm Roshan Malkar!</p>
+                    <br />
+                    <p>
+                        I'm a passionate Frontend and Backend Web Developer
+                        based in Lohegaon, Pune. I enjoy building websites and
+                        applications from the ground up and transforming ideas
+                        into modern, user-friendly digital experiences.
+                    </p>
+                    <br />
+                    <p>
+                        I recently completed my B.Sc. in Computer Science from
+                        Abasaheb Garware College, SPPU, with a strong academic
+                        track record.
+                    </p>
+                    <br />
+                    <p>
+                        I’m currently focused on sharpening my Data Structures &
+                        Algorithms skills while exploring the full-stack
+                        development world. I'm always eager to learn new
+                        technologies and love turning concepts into real,
+                        functional projects.
+                    </p>
+                    <br />
+                    <a href="#" class="resume-btn">Resume ↓</a>
+                </div>
+                <div class="about-image">
+                    <img src="public/profile2.jpeg" alt="About Me Image" />
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact">
+            <div class="section-title">
+                <div>
+                    <h2><span>#</span>contact-me</h2>
+                    <div class="line"></div>
+                </div>
+            </div>
+            <div class="contact-content">
+                <div class="contact-text">
+                    <p>
+                        I'm currently open to collaborations, or any exciting
+                        tech projects! Whether you have a question, an idea, or
+                        just want to say hello — feel free to reach out.
+                        <br />
+                        <br />
+                        I'll do my best to get back to you as soon as I can.
+                    </p>
+                </div>
+                <div class="contact-details">
+                    <h3>Message me here</h3>
+                    <br />
+                    <div class="contact-item">
+                        <img
+                            src="./public/gmail1.png"
+                            alt="Email icon"
+                            class="contact-icon"
+                        />
+                        <div>
+                            <p>malkarroshan7@gmail.com</p>
+                            <h4>Feel free to reach out anytime!</h4>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <img
+                            src="./public/linkedin1.png"
+                            alt="LinkedIn icon"
+                            class="contact-icon"
+                        />
+                        <div>
+                            <p>www.linkedin.com/in/roshan-malkar-8670b4218</p>
+                            <h4>Let's connect professionally!</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer>
+            <div class="footer-logo">pArZiVaL-18</div>
+            <div class="footer-links">
+                Quick links <br />
+                <a href="#home">Home</a>
+                <a href="#projects">Projects</a>
+                <a href="#skills">Skills</a>
+                <a href="#about">About</a>
+                <a href="#contact">Contact</a>
+            </div>
+            <div>©Copyright 2025. Made by pArZiVaL-18😄</div>
+        </footer>
+
+        <!-- Font Awesome for icons -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/js/all.min.js"></script>
+        <script src="script.js"></script>
+    </body>
+</html>
