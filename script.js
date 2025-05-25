@@ -75,6 +75,29 @@ function updateActiveNavLink() {
         });
     });
 }
+  async function fetchTechQuote() {
+      try {
+          const response = await fetch(
+              "https://api.quotable.io/random?tags=technology|science|famous-quotes"
+          );
+          console.log(response);
+          const data = await response.json();
+          console.log(data);
+          document.getElementById("quote").textContent = `${data.content}`;
+          document.getElementById(
+              "quote-auther"
+          ).textContent = `- ${data.author}`;
+
+          console.log(data.author);
+      } catch (error) {
+          console.error("Error fetching quote:", error);
+          document.getElementById("quote").textContent =
+              "Control can sometimes be an illusion. But sometimes you need illusion to gain control.";
+          document.getElementById("quote-auther").textContent = `- Mr. Who`;
+      }
+  }
+
+  window.addEventListener("DOMContentLoaded", fetchTechQuote);
 
 // Start the animation
 typeWriter();
