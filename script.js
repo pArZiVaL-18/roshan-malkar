@@ -1,9 +1,9 @@
 const titles = [
-    "- a developer",
-    "- a problem solver",
-    "- a coder",
-    "- a tech enthusiast",
-    "- a learner",
+    "- a developer;",
+    "- a problem solver;",
+    "- a coder;",
+    "- a tech enthusiast;",
+    "- a learner;",
 ];
 const typewriterEl = document.getElementById("typewriter-text");
 let titleIndex = 0;
@@ -75,29 +75,48 @@ function updateActiveNavLink() {
         });
     });
 }
-  async function fetchTechQuote() {
-      try {
-          const response = await fetch(
-              "https://api.quotable.io/random?tags=technology|science|famous-quotes"
-          );
-          console.log(response);
-          const data = await response.json();
-          console.log(data);
-          document.getElementById("quote").textContent = `${data.content}`;
-          document.getElementById(
-              "quote-auther"
-          ).textContent = `- ${data.author}`;
+async function fetchTechQuote() {
+    try {
+        const response = await fetch(
+            "https://api.quotable.io/random?tags=technology|famous-quotes"
+        );
+        console.log(response);
+        const data = await response.json();
+        console.log(data);
+        document.getElementById("quote").textContent = `${data.content}`;
+        document.getElementById(
+            "quote-auther"
+        ).textContent = `- ${data.author}`;
 
-          console.log(data.author);
-      } catch (error) {
-          console.error("Error fetching quote:", error);
-          document.getElementById("quote").textContent =
-              "Control can sometimes be an illusion. But sometimes you need illusion to gain control.";
-          document.getElementById("quote-auther").textContent = `- Mr. Who`;
-      }
-  }
+        console.log(data.author);
+    } catch (error) {
+        console.error("Error fetching quote:", error);
+        document.getElementById("quote").textContent =
+            "Control can sometimes be an illusion. But sometimes you need illusion to gain control.";
+        document.getElementById("quote-auther").textContent = `- Mr. Who`;
+    }
+}
 
-  window.addEventListener("DOMContentLoaded", fetchTechQuote);
+window.addEventListener("DOMContentLoaded", fetchTechQuote);
 
+const timelineItems = document.querySelectorAll(".timeline-item");
+
+const observer = new IntersectionObserver(
+    (entries) => {
+        entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add("visible");
+                observer.unobserve(entry.target);
+            }
+        });
+    },
+    {
+        threshold: 0.2,
+    }
+);
+
+timelineItems.forEach((item) => {
+    observer.observe(item);
+});
 // Start the animation
 typeWriter();

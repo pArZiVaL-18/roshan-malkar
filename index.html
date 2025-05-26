@@ -4,7 +4,7 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="stylesheet" href="style.css" />
-        <link rel="icon" href="./public/icon.jpg">
+        <link rel="icon" href="./public/icon.jpg" />
         <title>pArZiVaL-18 | Portfolio</title>
     </head>
     <body>
@@ -13,10 +13,10 @@
             <div class="logo">pArZiVaL-18</div>
             <nav>
                 <ul>
-                    <li><a href="#home">#home</a></li>
+                    <!-- <li><a href="#home">#home</a></li> -->
+                    <li><a href="#education">#education</a></li>
                     <li><a href="#projects">#projects</a></li>
                     <li><a href="#skills">#skills</a></li>
-                    <li><a href="#about">#about-me</a></li>
                     <li><a href="#contact">#contact-me</a></li>
                 </ul>
             </nav>
@@ -25,22 +25,18 @@
         <!-- Social Icons -->
         <div class="social-icons">
             <div class="line"></div>
-            <img
-                class="icon"
-                src="public/linkedin1.png"
-                onclick="location.href=`https://www.linkedin.com/in/roshan-malkar-8670b4218/`"
-            />
-
-            <img
-                class="icon"
-                src="public/github.png"
-                onclick="location.href=`https://github.com/pArZiVaL-18`"
-            />
-            <img
-                class="icon"
-                src="public/leetcode1.png"
-                onclick="location.href=`https://leetcode.com/u/RoshanMalkar/`"
-            />
+            <a href="https://github.com/pArZiVaL-18"
+                ><i class="fab fa-github"></i
+            ></a>
+            <a href="https://leetcode.com/u/RoshanMalkar/"
+                ><img src="public/leetcode.png" alt="leetcode-icon"
+            /></a>
+            <a href="https://www.instagram.com/roshan_1601/"
+                ><i class="fab fa-instagram"></i
+            ></a>
+            <a href="https://www.linkedin.com/in/roshan-malkar-8670b4218/"
+                ><i class="fab fa-linkedin"></i
+            ></a>
         </div>
 
         <!-- Hero Section -->
@@ -55,7 +51,7 @@
                     Right now, I’m all about cracking DSA problems, crafting
                     smooth frontends, and wiring up powerful backends.
                 </p>
-                <a href="#projects" class="cta-btn">Scroll Down ↓</a>
+                <a href="https://drive.google.com/file/d/11uXl2T6eH8EllnIbZC5HZxarCfxB0xFx/view?usp=sharing" class="cta-btn">Resume ↓</a>
                 <!-- <div class="currently-working">
                     <span>●</span> Currently working on <span>Portfolio</span>
                 </div> -->
@@ -75,8 +71,80 @@
                 </div>
                 <div class="quote-author" id="quote-auther">- Mr. Who</div>
             </div>
+            <div class="pattern"></div>
         </div>
-   
+
+        <!-- Education Section -->
+        <section id="education">
+            <div class="section-title">
+                <div>
+                    <h2><span>#</span>education</h2>
+                    <div class="line"></div>
+                </div>
+            </div>
+            <div class="timeline">
+                <div class="container">
+                    <div class="timeline-container">
+                        <div class="timeline-item">
+                            <div class="timeline-dot active-dot"></div>
+                            <div class="timeline-content">
+                                <h3>2024-26 <span>(FY)CGPA 9</span></h3>
+                                <p>
+                                    Persuing Master's degree in Computer
+                                    Applications from 
+                                </p>
+                                <h4><i>Fergusson College Pune</i>.</h4>
+                            </div>
+                        </div>
+
+                        <div class="timeline-item">
+                            <div class="timeline-dot">
+                                <i class="fas fa-check-circle"></i>
+                            </div>
+                            <div class="timeline-content">
+                                <h3>2021-24 <span>CGPA 9.17</span></h3>
+                                <p>
+                                    Graduated with B.Sc. in Computer Science
+                                    from
+                                </p>
+                                <h4><i>MES Abasaheb Garware College, Pune.</i></h4>
+                            </div>
+                        </div>
+
+                        <div class="timeline-item">
+                            <div class="timeline-dot">
+                                <i class="fas fa-check-circle"></i>
+                            </div>
+                            <div class="timeline-content">
+                                <h3>2019-21 <span>Per 88.17%</span></h3>
+                                <p>
+                                    Completed HSC (12th Grade - Science Stream)
+                                    from
+                                </p>
+                                <h4><i>Rani Parvati Devi jr College
+                                        Sawantwadi, Maharashtra.</i></h4>
+                            </div>
+                        </div>
+
+                        <div class="timeline-item">
+                            <div class="timeline-dot">
+                                <i class="fas fa-check-circle"></i>
+                            </div>
+                            <div class="timeline-content">
+                                <h3>2018-19 <span>Per 90.60%</span></h3>
+                                <p>
+                                    Completed SSC (10th Grade) from
+                                </p>
+                                <h4><i>Madhyamik Vidyalay & Kanishth
+                                        Mahavidyalay Sangeli Sawantwadi,
+                                        Maharashtra.</i></h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <!-- Projects Section -->
         <section id="projects">
             <div class="section-title">
@@ -286,7 +354,7 @@
         </section>
 
         <!-- About Section -->
-        <section id="about">
+        <section id="contact">
             <div class="section-title">
                 <div>
                     <h2><span>#</span>about-me</h2>
@@ -296,38 +364,60 @@
             <div class="about-content">
                 <div class="about-text">
                     <p>Hello, I'm Roshan Malkar!</p>
-                    <br />
-                    <p>
-                        I'm a passionate Frontend and Backend Web Developer
-                        based in Lohegaon, Pune. I enjoy building websites and
-                        applications from the ground up and transforming ideas
-                        into modern, user-friendly digital experiences.
-                    </p>
-                    <br />
-                    <p>
+                    <!-- <p>
                         I recently completed my B.Sc. in Computer Science from
                         Abasaheb Garware College, SPPU, with a strong academic
                         track record.
-                    </p>
+                    </p> -->
                     <br />
                     <p>
-                        I’m currently focused on sharpening my Data Structures &
-                        Algorithms skills while exploring the full-stack
-                        development world. I'm always eager to learn new
+                        Currently Persuing a Master's degree from Fergusson College Pune.
+                    </p>
+                    <p>
+                        I'm always eager to learn new
                         technologies and love turning concepts into real,
                         functional projects.
                     </p>
                     <br />
-                    <a href="#" class="resume-btn">Resume ↓</a>
+                    <p>
+                        I'm currently open to collaborations, or any exciting
+                        tech projects! Whether you have a question, an idea, or
+                        just want to say hello — feel free to reach out.
+                        <br />
+                        <br />
+                        I'll do my best to get back to you as soon as I can.
+                    </p>
+                    <a href="https://drive.google.com/file/d/11uXl2T6eH8EllnIbZC5HZxarCfxB0xFx/view?usp=sharing" class="resume-btn">Resume ↓</a>
                 </div>
-                <div class="about-image">
+                <!-- <div class="about-image">
                     <img src="public/profile2.jpeg" alt="About Me Image" />
+                </div> -->
+                                <div class="contact-details">
+                    <h3>Message me here🤞</h3>
+                    <h4>Feel free to reach out anytime!</h4>
+                    <p>
+                        <i class="fas fa-phone"></i>
+                        <a href="tel:+123456789">+91 7350069171</a>
+                    </p>
+                    <p>
+                        <i class="fas fa-envelope"></i>
+                        <a href="mailto:malkarroshan7@gmail.com"
+                            >malkarroshan7@gmail.com</a
+                        >
+                    </p>
+
+                    <br>
+                    <h4>Let's connect professionally!</h4>
+                    <p>
+                        <i class="fab fa-linkedin"></i>
+                        <a href="www.linkedin.com/in/roshan-malkar-8670b4218">Linked In!</a>
+                    </p>
                 </div>
             </div>
         </section>
 
         <!-- Contact Section -->
-        <section id="contact">
+        <!-- <section id="contact">
             <div class="section-title">
                 <div>
                     <h2><span>#</span>contact-me</h2>
@@ -346,45 +436,32 @@
                     </p>
                 </div>
                 <div class="contact-details">
-                    <h3>Message me here</h3>
-                    <br />
-                    <div class="contact-item">
-                        <img
-                            src="./public/gmail1.png"
-                            alt="Email icon"
-                            class="contact-icon"
-                        />
-                        <div>
-                            <p>malkarroshan7@gmail.com</p>
-                            <h4>Feel free to reach out anytime!</h4>
-                        </div>
-                    </div>
-                    <div class="contact-item">
-                        <img
-                            src="./public/linkedin1.png"
-                            alt="LinkedIn icon"
-                            class="contact-icon"
-                        />
-                        <div>
-                            <p>www.linkedin.com/in/roshan-malkar-8670b4218</p>
-                            <h4>Let's connect professionally!</h4>
-                        </div>
-                    </div>
+                    <h3>Message me here🤞</h3>
+                    <h4>Feel free to reach out anytime!</h4>
+                    <p>
+                        <i class="fas fa-phone"></i>
+                        <a href="tel:+123456789">+91 7350069171</a>
+                    </p>
+                    <p>
+                        <i class="fas fa-envelope"></i>
+                        <a href="mailto:malkarroshan7@gmail.com"
+                            >malkarroshan7@gmail.com</a
+                        >
+                    </p>
+
+                    <br>
+                    <h4>Let's connect professionally!</h4>
+                    <p>
+                        <i class="fab fa-linkedin"></i>
+                        <a href="www.linkedin.com/in/roshan-malkar-8670b4218">Linked In!</a>
+                    </p>
                 </div>
             </div>
-        </section>
+        </section> -->
 
         <!-- Footer -->
         <footer>
             <div class="footer-logo">pArZiVaL-18</div>
-            <!-- <div class="footer-links">
-                Quick links <br />
-                <a href="#home">Home</a>
-                <a href="#projects">Projects</a>
-                <a href="#skills">Skills</a>
-                <a href="#about">About</a>
-                <a href="#contact">Contact</a>
-            </div> -->
             <div>©Copyright 2025. Made by pArZiVaL-18😄</div>
         </footer>
 
