@@ -119,27 +119,48 @@ timelineItems.forEach((item) => {
     observer.observe(item);
 });
 
+document.addEventListener("DOMContentLoaded", () => {
+    const items = document.querySelectorAll(".project-card");
 
-    document.addEventListener("DOMContentLoaded", () => {
-        const items = document.querySelectorAll(".project-card");
+    const observer = new IntersectionObserver(
+        (entries, observer) => {
+            entries.forEach((entry, index) => {
+                if (entry.isIntersecting) {
+                    const el = entry.target;
+                    el.style.setProperty("--delay", `${index * 0.3}s`);
+                    el.classList.add("show");
+                    observer.unobserve(el); // Animate once
+                }
+            });
+        },
+        {
+            threshold: 0.1,
+        }
+    );
 
-        const observer = new IntersectionObserver(
-            (entries, observer) => {
-                entries.forEach((entry, index) => {
-                    if (entry.isIntersecting) {
-                        const el = entry.target;
-                        el.style.setProperty("--delay", `${index * 0.2}s`);
-                        el.classList.add("show");
-                        observer.unobserve(el); // Animate once
-                    }
-                });
-            },
-            {
-                threshold: 0.1,
-            }
-        );
+    items.forEach((item) => observer.observe(item));
+});
 
-        items.forEach((item) => observer.observe(item));
-    });
+document.addEventListener("DOMContentLoaded", () => {
+    const items = document.querySelectorAll(".skills-category");
+
+    const observer = new IntersectionObserver(
+        (entries, observer) => {
+            entries.forEach((entry, index) => {
+                if (entry.isIntersecting) {
+                    const el = entry.target;
+                    el.style.setProperty("--delay", `${index * 0.3}s`);
+                    el.classList.add("show");
+                    observer.unobserve(el); // Animate once
+                }
+            });
+        },
+        {
+            threshold: 0.1,
+        }
+    );
+
+    items.forEach((item) => observer.observe(item));
+});
 // Start the animation
 typeWriter();

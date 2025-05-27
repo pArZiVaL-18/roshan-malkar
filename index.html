@@ -5,6 +5,10 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="stylesheet" href="style.css" />
         <link rel="icon" href="./public/icon.jpg" />
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css"
+        />
         <title>pArZiVaL-18 | Portfolio</title>
     </head>
     <body>
@@ -37,7 +41,6 @@
             <a href="https://www.instagram.com/roshan_1601/"
                 ><i class="fab fa-instagram"></i
             ></a>
-            
         </div>
 
         <!-- Hero Section -->
@@ -52,7 +55,11 @@
                     Right now, I’m all about cracking DSA problems, crafting
                     smooth frontends, and wiring up powerful backends.
                 </p>
-                <a href="https://drive.google.com/file/d/11uXl2T6eH8EllnIbZC5HZxarCfxB0xFx/view?usp=sharing" class="cta-btn">Resume ↓</a>
+                <a
+                    href="https://drive.google.com/file/d/11uXl2T6eH8EllnIbZC5HZxarCfxB0xFx/view?usp=sharing"
+                    class="cta-btn"
+                    >Resume ↓</a
+                >
                 <!-- <div class="currently-working">
                     <span>●</span> Currently working on <span>Portfolio</span>
                 </div> -->
@@ -92,7 +99,7 @@
                                 <h3>2024-26 <span>(FY)CGPA 9</span></h3>
                                 <p>
                                     Persuing Master's degree in Computer
-                                    Applications from 
+                                    Applications from
                                 </p>
                                 <h4><i>Fergusson College Pune</i>.</h4>
                             </div>
@@ -108,7 +115,9 @@
                                     Graduated with B.Sc. in Computer Science
                                     from
                                 </p>
-                                <h4><i>MES Abasaheb Garware College, Pune.</i></h4>
+                                <h4>
+                                    <i>MES Abasaheb Garware College, Pune.</i>
+                                </h4>
                             </div>
                         </div>
 
@@ -122,8 +131,12 @@
                                     Completed HSC (12th Grade - Science Stream)
                                     from
                                 </p>
-                                <h4><i>Rani Parvati Devi jr College
-                                        Sawantwadi, Maharashtra.</i></h4>
+                                <h4>
+                                    <i
+                                        >Rani Parvati Devi jr College
+                                        Sawantwadi, Maharashtra.</i
+                                    >
+                                </h4>
                             </div>
                         </div>
 
@@ -133,12 +146,14 @@
                             </div>
                             <div class="timeline-content">
                                 <h3>2018-19 <span>Per 90.60%</span></h3>
-                                <p>
-                                    Completed SSC (10th Grade) from
-                                </p>
-                                <h4><i>Madhyamik Vidyalay & Kanishth
+                                <p>Completed SSC (10th Grade) from</p>
+                                <h4>
+                                    <i
+                                        >Madhyamik Vidyalay & Kanishth
                                         Mahavidyalay Sangeli Sawantwadi,
-                                        Maharashtra.</i></h4>
+                                        Maharashtra.</i
+                                    >
+                                </h4>
                             </div>
                         </div>
                     </div>
@@ -228,12 +243,12 @@
                         >
                             GitHub
                         </button>
-                        <button
+                        <!-- <button
                             class="btn live-btn"
                             onclick="location.href='https://github.com/pArZiVaL-18/React-ToDo-App'"
                         >
                             Live ↗
-                        </button>
+                        </button> -->
                     </div>
                 </div>
 
@@ -272,7 +287,8 @@
                         <h3 class="project-title">My-Portfolio</h3>
                         <div class="project-tags">HTML5 CSS3 JavaScript</div>
                         <p class="project-description">
-                            Personal portfolio site showcasing my work, education, learning & all.
+                            Personal portfolio site showcasing my work,
+                            education, learning & all.
                         </p>
                         <button
                             class="btn live-btn"
@@ -300,108 +316,299 @@
                 </div>
             </div>
             <div class="skills-grid">
-                <!-- Skill 1 -->
-                <div class="skill-card">
-                    <div class="skill-icon">
-                        <img
-                            src="./public/html1.png"
-                            alt="Checkmark"
-                            class="icon"
-                        />
+                <!-- Programming Languages -->
+                <div class="skills-category">
+                    <h3><i class="fas fa-code"></i> Programming Languages</h3>
+
+                    <div class="skill with-tooltip" data-tooltip="Java: Used for solving almost all leetcode problems.">
+                        <div class="skill-header">
+                            <span><i class="fab fa-java"></i> Java</span>
+                            <div class="progress">
+                                <div
+                                    class="progress-bar"
+                                    style="--progress: 90%"
+                                ></div>
+                                <div
+                                    class="blinking-dot"
+                                    style="--dot-position: 90%"
+                                ></div>
+                            </div>
+                        </div>
+                        <h4>Object-oriented programming language</h4>
                     </div>
-                    <div class="skill-name">HTML</div>
+
+                    <div class="skill with-tooltip" data-tooltip="C: Heavily used while learning DSA in academics.">
+                        <div class="skill-header">
+                            <span><i class="devicon-c-plain"></i> C</span>
+                            <div class="progress">
+                                <div
+                                    class="progress-bar"
+                                    style="--progress: 90%"
+                                ></div>
+                                <div
+                                    class="blinking-dot"
+                                    style="--dot-position: 90%"
+                                ></div>
+                            </div>
+                        </div>
+                        <h4>
+                            Begginer-friendly & Procedural programming language
+                        </h4>
+                    </div>
+
+                    <div class="skill with-tooltip" data-tooltip="Python: Not used much, just know the basics.">
+                        <div class="skill-header">
+                            <span
+                                ><i class="devicon-python-plain"></i
+                                >Python</span
+                            >
+                            <div class="progress">
+                                <div
+                                    class="progress-bar"
+                                    style="--progress: 50%"
+                                ></div>
+                                <div
+                                    class="blinking-dot"
+                                    style="--dot-position: 50%"
+                                ></div>
+                            </div>
+                        </div>
+                        <h4>High-level, versatile programming language</h4>
+                    </div>
+
+                    <div class="skill with-tooltip" data-tooltip="SQL: Used for wiring queries in academics.">
+                        <div class="skill-header">
+                            <span><i class="fas fa-code"></i> SQL</span>
+                            <div class="progress">
+                                <div
+                                    class="progress-bar"
+                                    style="--progress: 60%"
+                                ></div>
+                                <div
+                                    class="blinking-dot"
+                                    style="--dot-position: 60%"
+                                ></div>
+                            </div>
+                        </div>
+                        <h4>Database query language</h4>
+                    </div>
+                </div>
+                <!-- Frontend -->
+                <div class="skills-category">
+                    <h3><i class="fas fa-laptop-code"></i> Frontend</h3>
+
+                    <div class="skill with-tooltip" data-tooltip="HTML5: Used in all my projects">
+                        <div class="skill-header">
+                            <span
+                                ><i class="fab fa-html5 icon-html"></i>
+                                HTML</span
+                            >
+                            <div class="progress">
+                                <div
+                                    class="progress-bar"
+                                    style="--progress: 95%"
+                                ></div>
+                                <div
+                                    class="blinking-dot"
+                                    style="--dot-position: 95%"
+                                ></div>
+                            </div>
+                        </div>
+                        <h4>Markup language for web content</h4>
+                    </div>
+
+                    <div class="skill with-tooltip" data-tooltip="CSS3: Extensively used in my Algo-Visualizer project">
+                        <div class="skill-header">
+                            <span
+                                ><i class="fab fa-css3-alt icon-css"></i>
+                                CSS</span
+                            >
+                            <div class="progress">
+                                <div
+                                    class="progress-bar"
+                                    style="--progress: 90%"
+                                ></div>
+                                <div
+                                    class="blinking-dot"
+                                    style="--dot-position: 90%"
+                                ></div>
+                            </div>
+                        </div>
+                        <h4>Styling the structure of web pages</h4>
+                    </div>
+
+                    <div class="skill with-tooltip" data-tooltip="JS: Used in almost all my projects.">
+                        <div class="skill-header">
+                            <span
+                                ><i class="fab fa-js icon-js"></i>
+                                JavaScript</span
+                            >
+                            <div class="progress">
+                                <div
+                                    class="progress-bar"
+                                    style="--progress: 85%"
+                                ></div>
+                                <div
+                                    class="blinking-dot"
+                                    style="--dot-position: 85%"
+                                ></div>
+                            </div>
+                        </div>
+                        <h4>Interactive behavior on websites</h4>
+                    </div>
+
+                    <div class="skill with-tooltip" data-tooltip="ReactJS: Used in my Zoom-clone project for creating frontend.">
+                        <div class="skill-header">
+                            <span
+                                ><i class="fab fa-react icon-react"></i>
+                                ReactJS</span
+                            >
+                            <div class="progress">
+                                <div
+                                    class="progress-bar"
+                                    style="--progress: 50%"
+                                ></div>
+                                <div
+                                    class="blinking-dot"
+                                    style="--dot-position: 50%"
+                                ></div>
+                            </div>
+                        </div>
+                        <h4>Frontend JavaScript library</h4>
+                    </div>
                 </div>
 
-                <!-- Skill 2 -->
-                <div class="skill-card">
-                    <div class="skill-icon">
-                        <img
-                            src="./public/css1.png"
-                            alt="Checkmark"
-                            class="icon"
-                        />
+                <!-- Database -->
+                <div class="skills-category">
+                    <h3><i class="fas fa-database"></i> Databases & Tools</h3>
+
+                    <div class="skill with-tooltip" data-tooltip="MongoDB: Used in Zoom-clone & Wanderlust project for managing data.">
+                        <div class="skill-header">
+                            <span
+                                ><i class="fas fa-leaf icon-mongo"></i>
+                                MongoDB</span
+                            >
+                            <div class="progress">
+                                <div
+                                    class="progress-bar"
+                                    style="--progress: 50%"
+                                ></div>
+                                <div
+                                    class="blinking-dot"
+                                    style="--dot-position: 50%"
+                                ></div>
+                            </div>
+                        </div>
+                        <h4>NoSQL database for modern apps</h4>
                     </div>
-                    <div class="skill-name">CSS</div>
+
+                    <div class="skill with-tooltip" data-tooltip="MySQL: Used in academics while learning.">
+                        <div class="skill-header">
+                            <span
+                                ><i
+                                    class="devicon-mysql-plain-wordmark"
+                                    style="font-size: 30px"
+                                ></i>
+                                MySQL</span
+                            >
+                            <div class="progress">
+                                <div
+                                    class="progress-bar"
+                                    style="--progress: 60%"
+                                ></div>
+                                <div
+                                    class="blinking-dot"
+                                    style="--dot-position: 60%"
+                                ></div>
+                            </div>
+                        </div>
+                        <h4>Relational database management system</h4>
+                    </div>
+
+                    <div class="skill with-tooltip" data-tooltip="Git-Github: Used for storing all my project codebase virtually.">
+                        <div class="skill-header">
+                            <span><i class="fab fa-git-alt"></i> Git</span>
+                            <div class="progress">
+                                <div
+                                    class="progress-bar"
+                                    style="--progress: 60%"
+                                ></div>
+                                <div
+                                    class="blinking-dot"
+                                    style="--dot-position: 60%"
+                                ></div>
+                            </div>
+                        </div>
+                        <h4>Version control system</h4>
+                    </div>
                 </div>
 
-                <!-- Skill 3 -->
-                <div class="skill-card">
-                    <div class="skill-icon">
-                        <img
-                            src="./public/js1.png"
-                            alt="Checkmark"
-                            class="icon"
-                        />
-                    </div>
-                    <div class="skill-name">JavaScript</div>
-                </div>
+                <!-- Backend -->
+                <div class="skills-category">
+                    <h3><i class="fas fa-server"></i> Backend</h3>
 
-                <!-- Skill 4 -->
-                <div class="skill-card">
-                    <div class="skill-icon">
-                        <img
-                            src="./public/react1.png"
-                            alt="Checkmark"
-                            class="icon"
-                        />
+                    <div class="skill with-tooltip" data-tooltip="Node: Used in Zoom-clone & Wanderlust project.">
+                        <div class="skill-header">
+                            <span
+                                ><i
+                                    class="fab fa-node icon-node"
+                                    style="font-size: 30px"
+                                ></i>
+                                NodeJS</span
+                            >
+                            <div class="progress">
+                                <div
+                                    class="progress-bar"
+                                    style="--progress: 70%"
+                                ></div>
+                                <div
+                                    class="blinking-dot"
+                                    style="--dot-position: 70%"
+                                ></div>
+                            </div>
+                        </div>
+                        <h4>JavaScript runtime for backend</h4>
                     </div>
-                    <div class="skill-name">ReactJS</div>
-                </div>
 
-                <!-- Skill 5 -->
-                <div class="skill-card">
-                    <div class="skill-icon">
-                        <img
-                            src="./public/node1.png"
-                            alt="Checkmark"
-                            class="icon"
-                        />
+                    <div class="skill with-tooltip" data-tooltip="Express: Used in Zoom-clone & Wanderlust for writting API's.">
+                        <div class="skill-header">
+                            <span
+                                ><i class="fas fa-network-wired"></i>
+                                ExpressJS</span
+                            >
+                            <div class="progress">
+                                <div
+                                    class="progress-bar"
+                                    style="--progress: 70%"
+                                ></div>
+                                <div
+                                    class="blinking-dot"
+                                    style="--dot-position: 70%"
+                                ></div>
+                            </div>
+                        </div>
+                        <h4>Web framework for Node.js</h4>
                     </div>
-                    <div class="skill-name">NodeJS</div>
-                </div>
 
-                <!-- Skill 6 -->
-                <div class="skill-card">
-                    <div class="skill-icon">
-                        <img
-                            src="./public/express.png"
-                            alt="Checkmark"
-                            class="icon"
-                        />
+                    <div class="skill with-tooltip" data-tooltip="EJS: Used in Wanderlust project for Templating.">
+                        <div class="skill-header">
+                            <span><i class="fab fa-js"></i> EJS</span>
+                            <div class="progress">
+                                <div
+                                    class="progress-bar"
+                                    style="--progress: 65%"
+                                ></div>
+                                <div
+                                    class="blinking-dot"
+                                    style="--dot-position: 65%"
+                                ></div>
+                            </div>
+                        </div>
+                        <h4>
+                            Templating engine for generating HTML with
+                            JavaScript
+                        </h4>
                     </div>
-                    <div class="skill-name">Express</div>
-                </div>
-
-                <!-- Skill 7 -->
-                <div class="skill-card">
-                    <div class="skill-icon">
-                        <img
-                            src="./public/git1.png"
-                            alt="Checkmark"
-                            class="icon"
-                        />
-                    </div>
-                    <div class="skill-name">Git</div>
-                </div>
-
-                <!-- Skill 8 -->
-                <div class="skill-card">
-                    <div class="skill-icon">
-                        <img
-                            src="./public/mongo1.png"
-                            alt="Checkmark"
-                            class="icon"
-                        />
-                    </div>
-                    <div class="skill-name">MongoDB</div>
-                </div>
-
-                <!-- Skill 9 -->
-                <div class="skill-card">
-                    <div class="skill-icon">
-                        <span style="color: #007396">■</span>
-                    </div>
-                    <div class="skill-name">Java</div>
                 </div>
             </div>
         </section>
@@ -424,12 +631,12 @@
                     </p> -->
                     <br />
                     <p>
-                        Currently Persuing a Master's degree from Fergusson College Pune.
+                        Currently Persuing a Master's degree from Fergusson
+                        College Pune.
                     </p>
                     <p>
-                        I'm always eager to learn new
-                        technologies and love turning concepts into real,
-                        functional projects.
+                        I'm always eager to learn new technologies and love
+                        turning concepts into real, functional projects.
                     </p>
                     <br />
                     <p>
@@ -440,54 +647,15 @@
                         <br />
                         I'll do my best to get back to you as soon as I can.
                     </p>
-                    <a href="https://drive.google.com/file/d/11uXl2T6eH8EllnIbZC5HZxarCfxB0xFx/view?usp=sharing" class="resume-btn">Resume ↓</a>
+                    <a
+                        href="https://drive.google.com/file/d/11uXl2T6eH8EllnIbZC5HZxarCfxB0xFx/view?usp=sharing"
+                        class="resume-btn"
+                        >Resume ↓</a
+                    >
                 </div>
                 <!-- <div class="about-image">
                     <img src="public/profile2.jpeg" alt="About Me Image" />
                 </div> -->
-                                <div class="contact-details">
-                    <h3>Message me here🤞</h3>
-                    <h4>Feel free to reach out anytime!</h4>
-                    <p>
-                        <i class="fas fa-phone"></i>
-                        <a href="tel:+123456789">+91 7350069171</a>
-                    </p>
-                    <p>
-                        <i class="fas fa-envelope"></i>
-                        <a href="mailto:malkarroshan7@gmail.com"
-                            >malkarroshan7@gmail.com</a
-                        >
-                    </p>
-
-                    <br>
-                    <h4>Let's connect professionally!</h4>
-                    <p>
-                        <i class="fab fa-linkedin"></i>
-                        <a href="www.linkedin.com/in/roshan-malkar-8670b4218">Linked In!</a>
-                    </p>
-                </div>
-            </div>
-        </section>
-
-        <!-- Contact Section -->
-        <!-- <section id="contact">
-            <div class="section-title">
-                <div>
-                    <h2><span>#</span>contact-me</h2>
-                    <div class="line"></div>
-                </div>
-            </div>
-            <div class="contact-content">
-                <div class="contact-text">
-                    <p>
-                        I'm currently open to collaborations, or any exciting
-                        tech projects! Whether you have a question, an idea, or
-                        just want to say hello — feel free to reach out.
-                        <br />
-                        <br />
-                        I'll do my best to get back to you as soon as I can.
-                    </p>
-                </div>
                 <div class="contact-details">
                     <h3>Message me here🤞</h3>
                     <h4>Feel free to reach out anytime!</h4>
@@ -502,16 +670,18 @@
                         >
                     </p>
 
-                    <br>
+                    <br />
                     <h4>Let's connect professionally!</h4>
                     <p>
                         <i class="fab fa-linkedin"></i>
-                        <a href="www.linkedin.com/in/roshan-malkar-8670b4218">Linked In!</a>
+                        <a href="www.linkedin.com/in/roshan-malkar-8670b4218"
+                            >Linked In!</a
+                        >
                     </p>
                 </div>
             </div>
-        </section> -->
-
+        </section>
+        
         <!-- Footer -->
         <footer>
             <div class="footer-logo">pArZiVaL-18</div>
@@ -523,8 +693,8 @@
         <script src="script.js"></script>
 
         <div class="bg-effects">
-      <div class="grid-overlay"></div>
-      <div class="scan-lines"></div>
-    </div>
+            <div class="grid-overlay"></div>
+            <div class="scan-lines"></div>
+        </div>
     </body>
 </html>
