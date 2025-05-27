@@ -21,7 +21,7 @@ This portfolio highlights:
 
 ## 📸 Preview
 
-👉 [Live Demo](https://parzival-18.github.io/roshan-malkar/)
+👉 [Live Demo](https://roshanmalkar.onrender.com)
 
 ## 📂 Folder Structure
 
